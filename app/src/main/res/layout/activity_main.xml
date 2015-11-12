@@ -1,0 +1,127 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/buttonMoveLeft"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:textColor="#ff000000"
+            android:text="Count : "
+            />
+        <TextView
+            android:id="@+id/CountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/buttonMoveUp"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:textColor="#ff000000"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/buttonLevelPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"
+            android:onClick="onClick"
+            android:textColor="#ff000000"
+            android:text="Prev"
+            />
+
+        <Button
+            android:id="@+id/buttonLevelNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"
+            android:onClick="onClick"
+            android:textColor="#ff000000"
+            android:text="Next"
+            />
+
+        <Button
+            android:id="@+id/buttonMoveDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="40dip"
+            android:paddingRight="40dip"
+            android:layout_marginBottom="1dip"
+            android:onClick="onClick"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:text="↓"
+            />
+
+        <Button
+            android:id="@+id/buttonMoveUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/buttonMoveDown"
+            android:paddingLeft="40dip"
+            android:paddingRight="40dip"
+            android:layout_marginBottom="1dip"
+            android:onClick="onClick"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:text="↑"
+            />
+
+        <Button
+            android:id="@+id/buttonMoveLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/buttonLevelPrev"
+            android:paddingLeft="40dip"
+            android:paddingRight="40dip"
+            android:layout_marginBottom="1dip"
+            android:onClick="onClick"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:text="←"
+            />
+
+        <Button
+            android:id="@+id/buttonMoveRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/buttonLevelNext"
+            android:paddingLeft="40dip"
+            android:paddingRight="40dip"
+            android:layout_marginBottom="1dip"
+            android:onClick="onClick"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:text="→"
+            />
+
+
+    </RelativeLayout>
+</FrameLayout>
