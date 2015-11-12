@@ -261,6 +261,7 @@ public class MainActivity extends AppCompatActivity {
         titleText = String.format("PushMan Level-%d",mGameLevelNum);
         this.setTitle(titleText);
 
+
         //캔버스를 갱신
         mView.invalidate();
     }
